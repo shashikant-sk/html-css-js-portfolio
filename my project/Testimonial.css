@@ -17,8 +17,43 @@
     font-family: 'Raleway' sans-serif;
     color: #fff;
     } 
+    .wrapper h1{
+        font-size 36px;
+        font-weight : 500;
+        margin: 25px 0;
+
+    }
+
+.wrapper h5{
+    font-size:20px;
+    text-align : center;
+    font-weight:300;
+
+}
+
 .cards{
     display: flex;
     justify-content: center;
     align-items: center;
+    width:1000px
+    margin: 0 auto; 
+}
+
+.card{
+    width: 350px;
+    height:250px;
+    border-radius:15px;
+    margin: 5px;
+    padding:20px 30px;
+    position: relative;
+
+}
+.card img{
+    height : 90px;
+    width:90px;
+    border: 2px solid #f87652;
+    border-radius:50%;
+    position:absolute;
+    top: -12%;
+    left:10px
 }
