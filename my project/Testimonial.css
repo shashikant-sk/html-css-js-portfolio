@@ -46,6 +46,7 @@
     margin: 5px;
     padding:20px 30px;
     position: relative;
+    background: rgba(255,255,255,0.2 );
 
 }
 .card img{
