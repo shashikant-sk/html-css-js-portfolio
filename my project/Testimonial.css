@@ -1,110 +1,108 @@
-/* css code for Testimonial */
-* {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
 .wrapper {
-
-    /* designing container for our Testimonial cards layout  */
-    background:linear-gradient(50deg, #81818180 0%, #2e2e2e80 100%);
-    min-height:100vh;
+ 
+    background: linear-gradient(50deg, #282a39 0%, #f87652 200%);
+    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway'sans-serif;
     color: #fff;
-    } 
-.wrapper #head h1{
-        font-size 600px;
-        font-weight : 500;
-        margin-top: 36px;
-        margin-bottom:25px;
-        text-align: center;
-
-    }
-
-.wrapper h5{
-    font-size:15px;
-    text-align : center;
-    font-weight:300;
-    margin-bottom:50px;
 }
 
-.cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:1000px
-    margin: 0 auto; 
+.wrapper #head h1 {
+    font-size: 600px;
+    font-weight: 500;
+    margin-top: 36px;
+    margin-bottom: 25px;
+    text-align: center;
+
 }
 
-.card{
+.wrapper h5 {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.card {
     width: 350px;
-    height:250px;
-    border-radius:15px;
-    margin: 8px;
-    padding:20px 30px;
+    height: 250px;
+    border-radius: 15px;
+    /* margin: 110px 0 80px 0; */
+    padding: 20px 30px;
     position: relative;
-    background: rgba(255,255,255,0.2 );
+    background: rgba(255, 255, 255, 0.2);
     box-shadow: 20px 25px 30px rgba(0, 0, 0, 0.2);
-    transition:0.5s;
+    transition: 0.5s;
 
 }
 
-.card img{
-    height : 90px;
-    width:90px;
+.card img {
     border: 2px solid #f87652;
-    border-radius:50%;
-    position:absolute;
+    border-radius: 50%;
+    position: absolute;
     top: -18%;
-    left:20px
+    left: 20px;
+    z-index: 2;
 }
 
 
-.card p{
+.card p {
     font-size: 16px;
-    margin-top:25px;
+    margin-top: 25px;
     margin-bottom: 10px;
 }
-.card h2{
-  font-weight: 500;   
-  margin-bottom: 5px ;
+
+.card h2 {
+    font-weight: 500;
+    margin-bottom: 5px;
 }
 
-.card h4{
-     color: rgb(66, 9, 5);
-     font-weight:400;
-     font-size:16px ;
+.card h4 {
+    color: rgb(66, 9, 5);
+    font-weight: 400;
+    font-size: 16px;
 }
-.card i{
-    font-size:60px;
-    position:absolute;
-    bottom:20px;
-    right:25px;
-    color: #f87652;
-    
+
+.card i {
+    font-size: 60px;
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    color: rgb(196, 121, 93);
+
 }
-.card:hover{
-    transform: scale(1.4);
-    color:#333;
+
+.card:hover {
+    transform: scale(1.2) !important;
+    color: #333;
     background: #fff;
-    z-index:10000;
+    opacity: 2;
+    z-index: 3;
+}
+
+.owl-stage-outer {
+    overflow: visible !important;
 }
 
 /* responsive design */
 
-@media (max-width: 768px)
-{
-    .card{
-        width:100%;
+@media (max-width: 763px) and (min-width:400px) {
+    .card {
+        width: 100%;
         flex-direction: column;
-        flex-wrap:wrap;
+        flex-wrap: wrap
     }
-    .card{
-        margin: 40px 0;
+
+    .card {
+        margin: 20px 0;
     }
+}
+
+.owl-carousel .owl-stage-outer {
+    /* override */
+    overflow: visible;
 }
