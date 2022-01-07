@@ -7,7 +7,7 @@
 .wrapper {
 
     /* designing container for our Testimonial cards layout  */
-    background:linear-gradient(50deg, #282a39 0%, #f87652 200%);
+    background:linear-gradient(50deg, #81818180 0%, #2e2e2e80 100%);
     min-height:100vh;
     margin: 0 auto;
     display: flex;
@@ -85,7 +85,7 @@
     position:absolute;
     bottom:20px;
     right:25px;
-    color: rgb(196, 121, 93);
+    color: #f87652;
     
 }
 .card:hover{
@@ -97,14 +97,14 @@
 
 /* responsive design */
 
-@media (max-width: 763px) and (min-width:400px)  {
+@media (max-width: 768px)
 {
     .card{
         width:100%;
         flex-direction: column;
-        flex-wrap:wrap
+        flex-wrap:wrap;
     }
     .card{
-        margin:20px 0;
+        margin: 40px 0;
     }
 }
