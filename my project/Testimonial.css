@@ -1,6 +1,6 @@
 .wrapper {
  
-    background: linear-gradient(50deg, #282a39 0%, #f87652 200%);
+    background: linear-gradient(50deg, #282a39 0%, #282a39 200%);
     min-height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -27,7 +27,7 @@
     margin-bottom: 50px;
 }
 
-.card {
+.card1 {
     width: 350px;
     height: 250px;
     border-radius: 15px;
@@ -40,7 +40,7 @@
 
 }
 
-.card img {
+.card1 img {
     border: 2px solid #f87652;
     border-radius: 50%;
     position: absolute;
@@ -50,24 +50,24 @@
 }
 
 
-.card p {
+.card1 p {
     font-size: 16px;
     margin-top: 25px;
     margin-bottom: 10px;
 }
 
-.card h2 {
+.card1 h2 {
     font-weight: 500;
     margin-bottom: 5px;
 }
 
-.card h4 {
+.card1 h4 {
     color: rgb(66, 9, 5);
     font-weight: 400;
     font-size: 16px;
 }
 
-.card i {
+.card1 i {
     font-size: 60px;
     position: absolute;
     bottom: 20px;
@@ -76,7 +76,7 @@
 
 }
 
-.card:hover {
+.card1:hover {
     transform: scale(1.2) !important;
     color: #333;
     background: #fff;
@@ -91,13 +91,13 @@
 /* responsive design */
 
 @media (max-width: 763px) and (min-width:400px) {
-    .card {
+    .card1 {
         width: 100%;
         flex-direction: column;
         flex-wrap: wrap
     }
 
-    .card {
+    .card1 {
         margin: 20px 0;
     }
 }

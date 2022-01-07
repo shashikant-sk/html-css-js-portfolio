@@ -7,6 +7,7 @@
     <link rel="icon" href="./Images/my icon.jpg" type="image/gif" sizes="16x16">
 
     <link href="./Styles/index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./Testimonial.css">
 
     <!-- Latest compiled and minified CSS -->
     <link
@@ -372,8 +373,57 @@
                <!-- ////////////////////////////////////////////////////////////////////////////  -->
 
                <!-- Testimonial section -->
-               
-
+               <div style="background-color:#333647" id="testimonial">
+                <h1 class="text-white text-center my_portfolio_animation" style="margin: 100px 0 10px 0;"><span>Testimonials</span><span style="color: #f87652;">.</span></h1>
+            
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            <div class="wrapper" id="testimonial" style="width:100%">
+            
+                <!-- <h1 id="head">Testimonials</h1>
+                <h3> d</h3> -->
+                <div class="owl-carousel">
+                   
+                        <div class="card1">
+                            <img src="./Images/reviews/1st_person.png" style="height: 90px; width: 90px;z-index: 2;overflow: visible;" alt="3st reviews customer image">
+                            <p>heloow shcjsahdhsa hashdiashyh </p>
+                            <h2>Sulabh</h2>
+                            <h4 id="occupation">CEO of MY Company</h4>
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                    
+            
+            
+                </div>
+            </div>
+            <script>
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    dots: true,
+                    margin: 10,
+                    autoplayHoverPause: true,
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                    nav: false,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        600: {
+                            items: 2,
+                        },
+                        1000: {
+                            items: 3,
+                        }
+                    }
+                })
+            </script>
+            </div>
   
            <!-- --------------------------------------------- -->
       <!-- Contact Section -->
