@@ -1,6 +1,6 @@
 .wrapper {
  
-    background: linear-gradient(50deg, #282a39 0%, #282a39 200%);
+    background-color:  #282a39  ;
     min-height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -87,6 +87,9 @@
 .owl-stage-outer {
     overflow: visible !important;
 }
+
+
+
 
 /* responsive design */
 

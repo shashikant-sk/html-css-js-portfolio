@@ -463,9 +463,10 @@ color: transparent ;
   animation-duration: 0.5s;
 }
 
-/* Blogs section */
-/* .blogs_section {
+/* Blogs section  */
+ .blogs_section {
   background: #282a39;
+  padding-top: 40px;
  padding-bottom: 170px;
 }
 
@@ -496,7 +497,7 @@ color: transparent ;
 .blogs_section .card-body a {
   color: #f87652;
   font-size: 13px;
-} */
+}
 
 /* contact section */
 
