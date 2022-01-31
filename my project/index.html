@@ -34,6 +34,34 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     
+
+<style>
+    #dskn{
+        display:none;
+    }
+    #mobn{
+        display:block;
+    }
+    @media only screen and (max-width: 600px) {
+    #dskn{
+        display:block;
+    }
+    #mobn{
+        display:none;
+    }
+    body, #testimonial{
+        width:100%;
+        overflow-x:hidden;
+    }
+    .text-white,.heading{
+        font-size:2em;
+    }
+    .title, footer{
+        font-size:1.5em;
+    }
+    }
+</style>
+
   </head>
   <body>
     <div class="container" id="particles-js">
@@ -258,285 +286,330 @@
 
   <!-- --------------------------------------------- -->
 
-         <!-- portfolio section -->
-         <div class="portfolio_section" id="portfolio_section_id">
-          <div class="container">
-            <div class="row">
-             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-             <h1 class="text-white text-center my_portfolio_animation"><span>My portfolio</span><span style="color: #f87652;">.</span></h1>
-             </div>
-            </div>
-            <div class="row mt-5">
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <nav class="d-flex justify-content-center">
-                  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active text-white " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Web Development</a>
-                    <a class="nav-item nav-link text-white" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Android Development</a>
-                    
-                  </div>
-                </nav>
-                <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                   <div class="card-columns"> 
-                       <div class="card border-0 padding-0">
-                         <img class="card-img-top" src="./Images/web site image/Screenshot 2021-09-05 215450.jpg" alt="1 images">
-                       </div>  
-                       <div class="card border-0 padding-0">
-                        <img class="card-img-top" src="./Images/web site image/2.jpg" alt="1 images">
-                      </div> 
-                      <div class="card border-0 padding-0">
-                        <img class="card-img-top" src="./Images/web site image/3.jpg" alt="1 images">
-                      </div> 
-                      <div class="card border-0 padding-0">
-                        <img class="card-img-top" src="./Images/web site image/4.jpg" alt="1 images">
-                      </div>
-                      <div class="card border-0 padding-0">
-                        <img class="card-img-top" src="./Images/web site image/5.jpg" alt="1 images">
-                      </div>
-                      <div class="card border-0 padding-0">
-                        <img class="card-img-top" src="./Images/web site image/6.jpg" alt="1 images">
-                      </div>
-                      <div class="card border-0 padding-0">
-                        <img class="card-img-top" src="./Images/web site image/7.jpg" alt="1 images">
-                      </div>
-                      <div class="card border-0 padding-0">
-                        <img class="card-img-top" src="./Images/web site image/8.jpg" alt="1 images">
-                      </div>
-                   </div>
-                  </div>
-                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    <div class="card-columns"> 
-                      <div class="card border-0 padding-0">
-                        <img class="card-img-top" src="./Images/web site image/Screenshot 2021-09-05 215450.jpg" alt="1 images">
-                      </div>  
-                      <div class="card border-0 padding-0">
-                       <img class="card-img-top" src="./Images/web site image/2.jpg" alt="1 images">
-                     </div> 
-                     <div class="card border-0 padding-0">
-                       <img class="card-img-top" src="./Images/web site image/6.jpg" alt="1 images">
-                     </div> 
-                     <div class="card border-0 padding-0">
-                       <img class="card-img-top" src="./Images/web site image/5.jpg" alt="1 images">
-                     </div>
-                     
-                     <div>
-                  </div>
-                  
-                </div>
-              </div>
+   <!-- portfolio section -->
 
+   <div class="portfolio_section" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h1 class="text-white text-center my_portfolio_animation"><span>My portfolio</span><span style="color: #f87652;">.</span></h1>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <nav class="d-flex justify-content-center">
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active text-white " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Web Development</a>
+              <a class="nav-item nav-link text-white" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Android Development</a>
+
+            </div>
+          </nav>
+          <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="card-columns">
+                 <div class="card border-0 padding-0" style="background-color:#232532;color:white;padding: 5px;">
+                    <img class="card-img-top" src="Images/web site image/4.jpg" alt="Resturant Website">
+                    <h4 class="title" style="padding: 5px;">00000000000000000</h4>
+                    <p style="color: whitesmoke; padding:10px">
+                RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+                      <a href="http://hotel.sulabh.info.np/" target="_blank" title="RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR">
+                        <div class="btn_container">
+                          <button class="btn btn-light animate__animated" style="background-color: #F87652;color:white;border:none;margin-left:10px">See more</button>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+
+                 <div class="card border-0 padding-0" style="background-color:#232532;color:white;padding: 5px;">
+                    <img class="card-img-top" src="Images/web site image/5.jpg" alt="Visitor Management System">
+                    <h4 class="title" style="padding: 5px;">0000000000000000000</h4>
+                    <p style="color: whitesmoke; padding:10px">
+                      QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ
+                      <a href="https://visitorcms.com/" target="_blank" title="QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ">
+                        <div class="btn_container">
+                          <button class="btn btn-light animate__animated" style="background-color: #F87652;color:white;border:none;margin-left:10px">See more</button>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+
+                   <div class="card border-0 padding-0" style="background-color:#232532;color:white;padding: 5px;">
+                    <img class="card-img-top" src="Images/web site image/7.jpg" alt="Portfolio ">
+                    <h4 class="title" style="padding: 5px;">000000000000000000000000 </h4>
+                    <p style="color: whitesmoke; padding:10px">
+                     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   
+                        <a href="https://sulabh.info.np/" target="_blank" title="XXXXXXXXXXXXXX">
+                        <div class="btn_container">
+                          <button class="btn btn-light animate__animated" style="background-color: #F87652;color:white;border:none;margin-left:10px">See more</button>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+
+                  <div class="card border-0 padding-0" style="background-color:#232532;color:white;padding: 5px;">
+                    <img class="card-img-top" src="Images/web site image/8.jpg" alt="Horsonic Website">
+                    <h4 class="title" style="padding: 5px;">0000000000000000000000</h4>
+                    <p style="color: whitesmoke; padding:10px">
+                     SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+                      <a href="https://horsonic.com/" target="_blank" title="SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS">
+                        <div class="btn_container">
+                          <button class="btn btn-light animate__animated" style="background-color: #F87652;color:white;border:none;margin-left:10px">See more</button>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+
+                  <div class="card border-0 padding-0" style="background-color:#232532;color:white;padding: 5px;">
+                    <img class="card-img-top" src="./Images/web site image/1.jpg" alt="Horsonic Website">
+                    <h4 class="title" style="padding: 5px;">0000000000000000000000</h4>
+                    <p style="color: whitesmoke; padding:10px">
+                     SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+                      <a href="https://horsonic.com/" target="_blank" title="SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS">
+                        <div class="btn_container">
+                          <button class="btn btn-light animate__animated" style="background-color: #F87652;color:white;border:none;margin-left:10px">See more</button>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+
+                  <div class="card border-0 padding-0" style="background-color:#232532;color:white;padding: 5px;">
+                    <img class="card-img-top" src="Images/web site image/2.jpg" alt="Election Manifesto Comparision Site">
+                    <h4 class="title" style="padding: 5px;">0000000000000000000000</h4>
+                    <p style="color: whitesmoke; padding:10px">
+                      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                      <a href="https://sulabh.info.np/en" target="_blank" title="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
+                        <div class="btn_container">
+                          <button class="btn btn-light animate__animated" style="background-color: #F87652;color:white;border:none;margin-left:10px">See more</button>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <div class="card-columns">
+
+               <div class="card border-0 padding-0" style="background-color:#232532;color:white;padding: 5px;">
+                    <img class="card-img-top" src="Images/web site image/3.jpg" alt="Horsonic Website">
+                    <h4 class="title" style="padding: 5px;">0000000000000000000000</h4>
+                    <p style="color: whitesmoke; padding:10px">
+                     SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+                      <a href="https://horsonic.com/" target="_blank" title="SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS">
+                        <div class="btn_container">
+                          <button class="btn btn-light animate__animated" style="background-color: #F87652;color:white;border:none;margin-left:10px">See more</button>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+
+
+                <div class="card border-0 padding-0">
+                  <img class="card-img-top" src="Images/web%20site%20image/6.jpg" alt="1 images">
+                </div>
+
+                
+                <div class="card border-0 padding-0">
+                  <img class="card-img-top" src="Images/web%20site%20image/6.jpg" alt="1 images">
+                </div>
+                <div class="card border-0 padding-0">
+                  <img class="card-img-top" src="Images/web%20site%20image/5.jpg" alt="1 images">
+                </div>
+
+                <div>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
-  
-        <!-- --------------------------------------------- -->
-         <!-- blogs section  -->
-           <div class="blogs_section" id="blogs_section_id">
-             <div class="container">
-               <div class="row">
-               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-               <h1 id="heading" class="text-white text-center">Blogs<span style="color: #f87652;">.</span></h1>
-               </div>
-               </div>
-               <div class="row mt-5">
-               <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-               <div class="card animate__animated border-0 ">
-                 <div class="card-header border-0 p-0">
-                   <img src="./Images/web site image/1.jpg" width="100%" alt="blog_image_1">
-                 </div>
-                 <div class="card-body">
-                   <h3 class="title">Web Development </h3>
-                   <p class="date">Post On <span>05.12.2020</span> By <span>SK</span></p>
-                   <p class="txt">It is a Long established fact that a reader will be distracted by the readable content of a page when looking at it's layout</p>
-                   <a class="text-decoration-none read_more" href="#">Read more</a>
-                 </div>
-               </div>
-               </div> 
-               <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div class="card animate__animated border-0 ">
-                  <div class="card-header border-0 p-0">
-                    <img src="./Images/web site image/2.jpg" width="100%" alt="blog_image_2">
-                  </div>
-                  <div class="card-body">
-                    <h3 class="title">Android Development </h3>
-                    <p class="date">Post On <span>05.12.2020</span> By <span>SK</span></p>
-                    <p class="txt">It is a Long established fact that a reader will be distracted by the readable content of a page when looking at it's layout</p>
-                    <a class="text-decoration-none read_more" href="#">Read more</a>
-                  </div>
-                </div>
-                </div> 
-              </div>
-             </div>
-           </div> -->
-               <!--  -->
-
-               <!-- ////////////////////////////////////////////////////////////////////////////  -->
-
-               <!-- Testimonial section -->
-               <!-- <div style="background-color:#333647" id="testimonial">
-                <h1 class="text-white text-center my_portfolio_animation" style="margin: 100px 0 10px 0;"><span>Testimonials</span><span style="color: #f87652;">.</span></h1>
-            
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            
-            <div class="wrapper" id="testimonial" style="width:100%">
-            
-               
-                
-                 <div class="owl-carousel">
-                        <div class="card1">
-                            <img src="./Images/reviews/1st_person.png" style="height: 90px; width: 90px;z-index: 2;overflow: visible;" alt="3st reviews customer image">
-                            <p>heloow shcjsahdhsa hashdiashyh </p>
-                            <h2>Sulabh</h2>
-                            <h4 id="occupation">CEO of MY Company</h4>
-                            <i class="fa fa-quote-left"></i>
-                        </div>
-                        <div class="card1">
-                          <img src="./Images/reviews/2nd_person.png" style="height: 90px; width: 90px;z-index: 2;overflow: visible;" alt="3st reviews customer image">
-                          <p>heloow shcjsahdhsa hashdiashyh </p>
-                          <h2>Sulabh</h2>
-                          <h4 id="occupation">CEO of MY Company</h4>
-                          <i class="fa fa-quote-left"></i>
-                      </div>
-
-                    
-            
-            
-                </div>
-            </div>
-            <script>
-                $('.owl-carousel').owlCarousel({
-                    loop: true,
-                    dots: true,
-                    margin: 10,
-                    autoplayHoverPause: true,
-                    autoplay: true,
-                    autoplayTimeout: 2000,
-                    nav: false,
-                    responsiveClass: true,
-                    responsive: {
-                        0: {
-                            items: 1,
-                        },
-                        600: {
-                            items: 2,
-                        },
-                        1000: {
-                            items: 3,
-                        }
-                    }
-                })
-            </script>
-            </div> -->
-  
-           <!-- --------------------------------------------- -->
-      <!-- Contact Section -->
-         <div class="contact_section" id="contact_info_id">
-            <div class="container">
-              <div class="row m-0">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <div>
-                    <h3 class="heading">Contact Me<span style="color: #f87652;">.</span> </h3>
-                    <hr>
-                    <p class="txt">Feel Free to Contact With Me<span style="color: #f87652;">.</span></p>
-                    <form>
-                      <div class="form-group ">
-                        <input class="form-control" placeholder="Your Name" type="text" required/>
-                      </div>
-                      <div class="form-group ">
-                        <input class="form-control" placeholder="Your E-mail" type="email" required/>
-                      </div>
-                      <div class="form-group ">
-                        <input class="form-control" placeholder="Subject" type="text" required/>
-                      </div>
-                      <div class="form-group ">
-                        <textarea  class="form-control"  placeholder="Type your Message...." name="" id="textarea" cols="30" rows="10"></textarea>
-                      </div>
-                      <div class="form-group">
-                        <button class="btn btn-light animate__animated" type="submit">Submit</button>
-
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <div>
-                    <ul class="list-unstyled">
-                      <li>
-                         <i class="fa fa-envelope-o"></i> awesomechocolate4you@gmail.com
-                      </li>
-                      <li>
-                        <i class="fa fa-phone"></i> +977 9845451010
-                     </li>
-                    </ul>
-                  </div>
-                  <div class="map_wrapper">
-                    <div class="mapouter"><div class="gmap_canvas"><iframe width="525" height="320" id="gmap_canvas" src="https://maps.google.com/maps?q=birgunj%20nepal&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-a.com"></a><br><style>.mapouter{position:relative;text-align:right;height:327px;width:525px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:327px;width:525px;}</style></div></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-         </div>
-      
-       <!-- footer section -->
-      <div class="footer-area">
-         <div class="container">
-           <div class="row py-5">
-             <div class="logo-area col-lg-4 col-md-4 col-sm-12 col-12">
-            <a class="navbar-brand text-white" href="#">
-              shashikant<span style="color: #f87652;">.</span>
-            </a>
-            <p>Let's grab a coffee and jump on conversation chat with me.</p>
-            <div class="links">
-              <a href="https://www.facebook.com/passion.for.goal" target="_balnk"><i class="fa fa-facebook-square animate__animated "></i></a> 
-            <a href="https://www.instagram.com/shashikant_001/" target="_balnk"><i class="fa fa-instagram px-1 animate__animated"></i></a>  
-             <a href="https://twitter.com/Shashikant_03" target="_balnk"><i class="fa fa-twitter-square animate__animated "></i></a> 
-             <a href="https://www.linkedin.com/in/shashikant-001/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-            </div>
-             </div>
-             <div class=" col-lg-4 col-md-4 col-sm-12 col-12 column">
-              <h4 class="heading">Skills<span style="color: #f87652;">.</span></h4>
-              <ul class="list-group">
-                <li class="list-group-item border-0 bg-transparent">
-                <i class="fa fa-chevron-right"></i> <span>HTML & CSS</span>
-                </li>
-                <li class="list-group-item border-0 bg-transparent">
-                  <i class="fa fa-chevron-right"></i> <span>javascript & React Js</span>
-                  </li>
-                  <li class="list-group-item border-0 bg-transparent">
-                    <i class="fa fa-chevron-right"></i> <span>Django & Flask </span>
-                    </li>
-              </ul>
-             </div>
-             <div class=" col-lg-4 col-md-4 col-sm-12 col-12 column">
-              <h4 class="heading">UseFull Link<span style="color: #f87652;">.</span></h4>
-              <ul class="list-group">
-                <li class="list-group-item border-0 bg-transparent">
-                <i class="fa fa-chevron-right"></i> <span>Fiverr</span>
-                </li>
-                <li class="list-group-item border-0 bg-transparent">
-                  <i class="fa fa-chevron-right"></i> <span>Dribbble</span>
-                  </li>
-                  <li class="list-group-item border-0 bg-transparent">
-                    <i class="fa fa-chevron-right"></i> <span>Upwork</span>
-                    </li>
-              </ul>
-             </div>
-           </div>
-         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- --------------------------------------------- -->
+  <!-- blogs section -->
+  <div style="background-color:#333647" id="testimonial">
+    <h1 class="text-white text-center my_portfolio_animation" style="margin: 100px 0 10px 0;"><span>Testimonials</span><span style="color: #f87652;">.</span></h1>
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <div class="wrapper" id="testimonial" style="width:100%">
+
+      <!-- <h1 id="head">Testimonials</h1>
+    <h3> d</h3> -->
+      <div class="owl-carousel">
+                  <div class="card1">
+            <img src="Images/testimonials/1641472374kabee%20dai.png" style="height: 90px; width: 90px;z-index: 2;overflow: visible;" alt="3st reviews customer image">
+            <p>Being his employer and mentor was a great expirence. He is a quick learner and also effective problem solver. Work effiency and detailing are the characteristics of Sulabh</p>
+            <h2>Kabindra KC</h2>
+            <h4 id="occupation">M.D. at UNIIT  Software Pvt. Ltd.</h4>
+            <i class="fa fa-quote-left"></i>
+          </div>
+                  <div class="card1">
+            <img src="Images/testimonials/1641487084bishnu%20dai.png" style="height: 90px; width: 90px;z-index: 2;overflow: visible;" alt="3st reviews customer image">
+            <p>Sulabh was one of the brightest student of our Institute, during his internship he amazed us through his extra ordinary problem solving skills. After observing his performance we took him in our ongoing projects, his ability to solve real world problems just after course completion was remarkable.</p>
+            <h2>Bishnu Gautam</h2>
+            <h4 id="occupation">C.E.O. Bright Sight Technology Pvt. Ltd.</h4>
+            <i class="fa fa-quote-left"></i>
+          </div>
+              </div>
+    </div>
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        dots: true,
+        margin: 10,
+        autoplayHoverPause: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        nav: false,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          }
+        }
+      })
+    </script>
+  </div>
+
+
+  <!-- --------------------------------------------- -->
+   <!-- Contact Section -->
+   <div class="contact_section" id="contact_info_id">
+    <div class="container">
+      <div class="row m-0">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div>
+            <h3 class="heading">Contact Me<span style="color: #f87652;">.</span> </h3>
+            <hr>
+            <p class="txt">Feel Free to Contact With Me<span style="color: #f87652;">.</span></p>
+            <form>
+              <div class="form-group ">
+                <input class="form-control" placeholder="Your Name" type="text" required/>
+              </div>
+              <div class="form-group ">
+                <input class="form-control" placeholder="Your E-mail" type="email" required/>
+              </div>
+              <div class="form-group ">
+                <input class="form-control" placeholder="Subject" type="text" required/>
+              </div>
+              <div class="form-group ">
+                <textarea  class="form-control"  placeholder="Type your Message...." name="" id="textarea" cols="30" rows="10"></textarea>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-light animate__animated" type="submit">Submit</button>
+
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div>
+            <ul class="list-unstyled">
+              <li>
+                 <i class="fa fa-envelope-o"></i> awesomechocolate4you@gmail.com
+              </li>
+              <li>
+                <i class="fa fa-phone"></i> +977 9845451010
+             </li>
+            </ul>
+          </div>
+          <div class="map_wrapper">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="525" height="320" id="gmap_canvas" src="https://maps.google.com/maps?q=birgunj%20nepal&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-a.com"></a><br><style>.mapouter{position:relative;text-align:right;height:327px;width:525px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:327px;width:525px;}</style></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+
+  <!-- footer section -->
+  <div class="footer-area">
+    <div class="container">
+      <div class="row py-5">
+        <div class="logo-area col-lg-4 col-md-4 col-sm-12 col-12">
+          <a class="navbar-brand text-white" href="#">
+           shashikant<span style="color: #f87652;">.</span>
+          </a>
+          <p>Let's grab a coffee and jump on conversation chat with me.</p>
+          <div class="links">
+            <a href="https://facebook.com/sulabh1919" target="_blank"><i class="fa fa-facebook-square animate__animated "></i></a>
+            <a href="https://instagram.com/sulabh_nepal" target="_blank"><i class="fa fa-instagram px-1 animate__animated"></i></a>
+            <a href="https://twitter.com/sulabhnpl" target="_blank"><i class="fa fa-twitter-square animate__animated "></i></a>
+            <a href="https://github.com/sulabh1919" target="_blank"><i class="fa fa-github-square"></i></a>
+          </div>
+        </div>
+        <div class=" col-lg-4 col-md-4 col-sm-12 col-12 column">
+          <h4 class="heading">Skills<span style="color: #f87652;">.</span></h4>
+          <ul class="list-group">
+                            <li class="list-group-item border-0 bg-transparent">
+                  <i class="fa fa-chevron-right"></i> <span>HTML</span>
+                </li>
+                            <li class="list-group-item border-0 bg-transparent">
+                  <i class="fa fa-chevron-right"></i> <span>JS</span>
+                </li>
+                            <li class="list-group-item border-0 bg-transparent">
+                  <i class="fa fa-chevron-right"></i> <span>PHP</span>
+                </li>
+                            <li class="list-group-item border-0 bg-transparent">
+                  <i class="fa fa-chevron-right"></i> <span>mySQL</span>
+                </li>
+                            <li class="list-group-item border-0 bg-transparent">
+                  <i class="fa fa-chevron-right"></i> <span>Laravel</span>
+                </li>
+                      </ul>
+        </div>
+        <div class=" col-lg-4 col-md-4 col-sm-12 col-12 column">
+          <h4 class="heading">UseFull Link<span style="color: #f87652;">.</span></h4>
+          <ul class="list-group">
+
+                          <li class="list-group-item border-0 bg-transparent">
+                <i class="fa fa-chevron-right"></i> <a href="http://hotel.sulabh.info.np/" title="A beautiful website for resturants considering basic requirements.
+A portfolio site developed by Elegence is modified for hotel use with a resourseful CMS via PHP."><span style="color:white">Resturant Website</span></a>
+              </li>
+                          <li class="list-group-item border-0 bg-transparent">
+                <i class="fa fa-chevron-right"></i> <a href="https://visitorcms.com/" title="The VMS was made for a supplier such that any new subscriber can be added to use the service as desired by the Supplier.
+The buyer/vendor can use this site to manage its visitors. Responsive and interactive table is given for detailed view where as graphs and cards are given for quick and graphical information. The record can be kept and managed sectionwise and User Management System is given allowing 3 type of users for every section and as a whole."><span style="color:white">Visitor Management System</span></a>
+              </li>
+                          <li class="list-group-item border-0 bg-transparent">
+                <i class="fa fa-chevron-right"></i> <a href="https://sulabh.info.np/" title="Modified a template and made content management system using php from scratch. Almost every bit of information available is extracted from mySQL database. 
+Also contains a dynamic CV generator which creates a resume based on the data in database."><span style="color:white">Portfolio </span></a>
+              </li>
+                          <li class="list-group-item border-0 bg-transparent">
+                <i class="fa fa-chevron-right"></i> <a href="https://horsonic.com/" title="Made complete backend using Laravel including viewing Messages, and Content Maagement and contributed in some sections forntend."><span style="color:white">Horsonic Website</span></a>
+              </li>
+                          <li class="list-group-item border-0 bg-transparent">
+                <i class="fa fa-chevron-right"></i> <a href="https://sulabh.info.np/en" title="A website made via laravel to compare the manifesto of political parties during election.
+It has user management system allowing user to manage all or specific manifesto.
+Details can be uploaded in excel file or by simply filling  the form."><span style="color:white">Election Manifesto Comparision Site</span></a>
+              </li>
+                      </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
 
-      <footer class="text-white text-center">&copy;shashikant</footer>
+  <footer class="text-white text-center">&copy;SHASHIKANT</footer>
 
-         <!-- ____________________________________________________________________ -->
-         <!-- ----------------------------------------------------------------- -->
-    <script type="text/javascript" src="./Js/particles.js"></script>
-    <script type="text/javascript" src="./Js/app.js"></script>
-  </body>
+  <!-- ____________________________________________________________________ -->
+  <!-- ----------------------------------------------------------------- -->
+  <script type="text/javascript" src="Js/particles.js"></script>
+  <script type="text/javascript" src="Js/app.js"></script>
+</body>
+
+
 </html>

@@ -504,6 +504,7 @@ color: transparent ;
 .contact_section {
   background: #282a39;
   padding-bottom: 170px;
+  padding-top: 170px;
 }
 .contact_section .heading {
   font-weight: 600;
@@ -700,4 +701,127 @@ color: transparent ;
     font-size: 13px;
 
   }
+}
+
+
+
+
+
+
+
+/* Testimonials */
+
+
+.wrapper {
+
+  background-color: #333647;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway'sans-serif;
+  color: #fff;
+}
+
+.wrapper #head h1 {
+  font-size: 600px;
+  font-weight: 500;
+  margin-top: 36px;
+  margin-bottom: 25px;
+  text-align: center;
+
+}
+
+.wrapper h5 {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.card1 {
+  width: 350px;
+  /* height: 250px; */
+  border-radius: 15px;
+  /* margin: 110px 0 80px 0; */
+  padding: 20px 30px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 20px 25px 30px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+
+}
+
+.card1 img {
+  border: 2px solid #f87652;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  z-index: 2;
+}
+
+
+.card1 p {
+  font-size: 16px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.card1 h2 {
+  font-weight: 500;
+  margin-bottom: 5px;
+  /*width:70%;*/
+}
+
+.card1 h4 {
+  color: rgb(66, 9, 5);
+  font-weight: 400;
+  font-size: 16px;
+  width:70%;
+}
+
+.card1 i {
+  font-size: 60px;
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  color: rgb(196, 121, 93);
+
+}
+
+.card1:hover {
+  transform: scale(1.2) !important;
+  background: #fff;
+  opacity: 2;
+  z-index: 3;
+}
+
+.card1:hover p, .card1:hover h2 {
+  color: #333 !important;
+}
+
+.owl-stage-outer {
+  overflow: visible !important;
+}
+
+/* responsive design */
+
+@media (max-width: 763px) and (min-width:400px) {
+  .card1 {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap
+  }
+
+  .card1 {
+    margin: 20px 0;
+  }
+}
+
+.owl-carousel .owl-stage-outer {
+  /* override */
+  overflow: visible;
 }
