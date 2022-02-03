@@ -430,38 +430,146 @@
 
   <!-- --------------------------------------------- -->
   <!-- blogs section -->
-  <div style="background-color:#333647" id="testimonial">
-    <h1 class="text-white text-center my_portfolio_animation" style="margin: 100px 0 10px 0;"><span>Testimonials</span><span style="color: #f87652;">.</span></h1>
-    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="../../cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <style>
+    .wrapper {
 
-    <div class="wrapper" id="testimonial" style="width:100%">
+        background-color: #333647;
+        min-height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway'sans-serif;
+        color: #fff;
+    }
 
-      <!-- <h1 id="head">Testimonials</h1>
+    .wrapper #head h1 {
+        font-size: 600px;
+        font-weight: 500;
+        margin-top: 36px;
+        margin-bottom: 25px;
+        text-align: center;
+
+    }
+
+    .wrapper h5 {
+        font-size: 15px;
+        text-align: center;
+        font-weight: 300;
+        margin-bottom: 50px;
+    }
+
+    .card1 {
+        width: 350px;
+        /* height: 250px; */
+        border-radius: 15px;
+        /* margin: 110px 0 80px 0; */
+        padding: 20px 30px;
+        position: relative;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 20px 25px 30px rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+
+    }
+
+    .card1 img {
+        border: 2px solid #f87652;
+        border-radius: 50%;
+        position: absolute;
+        top: -28%;
+        left: 20px;
+        z-index: 2;
+    }
+
+
+    .card1 p {
+        font-size: 16px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    .card1 h2 {
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .card1 h4 {
+        color: rgb(66, 9, 5);
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .card1 i {
+        font-size: 60px;
+        position: absolute;
+        bottom: 20px;
+        right: 25px;
+        color: rgb(196, 121, 93);
+
+    }
+
+    .card1:hover {
+        transform: scale(1.2) !important;
+        background: #fff;
+        opacity: 2;
+        z-index: 3;
+    }
+
+    .card1:hover p,
+    .card1:hover h2 {
+        color: #333 !important;
+    }
+
+    .owl-stage-outer {
+        overflow: visible !important;
+    }
+
+    /* responsive design */
+
+    @media (max-width: 763px) and (min-width:400px) {
+        .card1 {
+            width: 100%;
+            flex-direction: column;
+            flex-wrap: wrap
+        }
+
+        .card1 {
+            margin: 20px 0;
+        }
+    }
+
+    .owl-carousel .owl-stage-outer {
+        /* override */
+        overflow: visible;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<div class="wrapper" id="testimonial" style="width:100%">
+
+    <!-- <h1 id="head">Testimonials</h1>
     <h3> d</h3> -->
-      <div class="owl-carousel">
-                  <div class="card1">
-            <img src="Images/my image.jpg" style="height: 90px; width: 90px;z-index: 2;overflow: visible;" alt="3st reviews customer image">
-            <p>Being his employer and mentor was a great expirence. He is a quick learner and also effective problem solver. Work effiency and detailing are the characteristics of Sulabh</p>
-            <h2>Kabindra KC</h2>
-            <h4 id="occupation">M.D. at UNIIT  Software Pvt. Ltd.</h4>
-            <i class="fa fa-quote-left"></i>
-          </div>
-                  <div class="card1">
-            <img src="Images/web site image/1.jpg" style="height: 90px; width: 90px;z-index: 2;overflow: visible;" alt="3st reviews customer image">
-            <p>Sulabh was one of the brightest student of our Institute, during his internship he amazed us through his extra ordinary problem solving skills. After observing his performance we took him in our ongoing projects, his ability to solve real world problems just after course completion was remarkable.</p>
-            <h2>Bishnu Gautam</h2>
-            <h4 id="occupation">C.E.O. Bright Sight Technology Pvt. Ltd.</h4>
-            <i class="fa fa-quote-left"></i>
-          </div>
-          
-              </div>
+    <div class="owl-carousel">
+       
+            <div class="card1">
+                <img src="./Images/reviews/1st_person.png" style="height: 90px; width: 90px;z-index: 2;overflow: visible;" alt="3st reviews customer image">
+                <p>heloow shcjsahdhsa hashdiashyh </p>
+                <h2>Sulabh</h2>
+                <h4 id="occupation">CEO of MY Company</h4>
+                <i class="fa fa-quote-left"></i>
+            </div>
+        
+
+
     </div>
-    <script>
-      $('.owl-carousel').owlCarousel({
+</div>
+<script>
+    $('.owl-carousel').owlCarousel({
         loop: true,
         dots: true,
         margin: 10,
@@ -471,20 +579,18 @@
         nav: false,
         responsiveClass: true,
         responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 2,
-          },
-          1000: {
-            items: 3,
-          }
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            1000: {
+                items: 3,
+            }
         }
-      })
-    </script>
-  </div>
-
+    })
+</script>
 
   <!-- --------------------------------------------- -->
    <!-- Contact Section -->

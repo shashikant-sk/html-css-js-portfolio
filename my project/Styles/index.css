@@ -711,7 +711,7 @@ color: transparent ;
 
 /* Testimonials */
 
-
+/* 
 .wrapper {
 
   background-color: #333647;
@@ -739,13 +739,13 @@ color: transparent ;
   text-align: center;
   font-weight: 300;
   margin-bottom: 50px;
-}
-
+} */
+/* 
 .card1 {
   width: 350px;
-  /* height: 250px; */
+ 
   border-radius: 15px;
-  /* margin: 110px 0 80px 0; */
+ 
   padding: 20px 30px;
   position: relative;
   background: rgba(255, 255, 255, 0.2);
@@ -773,7 +773,7 @@ color: transparent ;
 .card1 h2 {
   font-weight: 500;
   margin-bottom: 5px;
-  /*width:70%;*/
+
 }
 
 .card1 h4 {
@@ -806,9 +806,11 @@ color: transparent ;
 .owl-stage-outer {
   overflow: visible !important;
 }
+ */
 
+ /* ----------------- */
 /* responsive design */
-
+/* 
 @media (max-width: 763px) and (min-width:400px) {
   .card1 {
     width: 100%;
@@ -822,6 +824,7 @@ color: transparent ;
 }
 
 .owl-carousel .owl-stage-outer {
-  /* override */
+ 
   overflow: visible;
-}
+} */
+
